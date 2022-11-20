@@ -1,0 +1,40 @@
+{% extends "base3.html" %}
+{% load crispy_forms_tags %}
+{% block title %} 
+Confirmation
+{% endblock %}
+
+{% block content %} 
+{% load static %}
+<div class="bradcam_area breadcam_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    <h3>Confirmation</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class = "contact-section">
+    <div class="container col-xl-6">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="contact-title">Brain Death Details</h2>
+            </div>
+        </div>
+        <div class="container my-2">
+            <div class="col-xl-12 p-2 text-center">
+                {% for ob in data %}
+                    name = {{ob.hname}}
+                    hid = {{ob.hid}}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

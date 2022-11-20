@@ -1,0 +1,66 @@
+{% extends "base3.html" %}
+{% load crispy_forms_tags %}
+{% block title %} 
+Waiting List
+{% endblock %}
+
+{% block content %} 
+{% load static %}
+<div class="bradcam_area breadcam_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    <h3>Waiting List</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class = "contact-section">
+    <div class="container col-xl-12 p-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="contact-title">Brain Death Details</h2>
+            </div>
+        </div>
+        <div class="container my-2">
+            <div class="col-xl-12 p-2 text-center"><table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Donor Name</th>
+                    <th scope="col">Blood Group</th>
+                    <th scope="col">Required Organ</th>
+                    <th scope="col">Send Mail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% regroup data by name as grouped %}
+                    {% for group in grouped %}
+                    {% for ob in group.list %}
+                    <tr>
+                        {% if forloop.first %}<td rowspan="{{ group.tuple|length }}" scope="row">{{forloop.counter}}</td>{% endif %}
+                        {% if forloop.first %}<td rowspan="{{ group.tuple|length }}">{{ob.name}}</td>{% endif %}
+                        {% if forloop.first %}<td rowspan="{{ group.tuple|length }}">{{ob.bloodgroup}}</td>{% endif %}
+                        {% for organs in ob.organ %}
+                        <tr><td>{{organs}}</td>
+                            <td><a href="{% url 'list' %}" class="genric-btn success circle">Available</a></td></tr>
+                        {% endfor %}
+                    </tr>    
+                        
+                    {% endfor %}
+                    
+                    {% endfor %}
+                </tbody>
+              </table>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% block title %} 
+Home
+{% endblock %}
+
+{% block content %} 
+
+{% load static %}
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider d-flex align-items-center slider_bg_1 overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text ">
+                                <span>Save Life</span>
+                                <h3> <span>Be a Thinker, Be a Do-er</span> <br>
+                                    Be a Donor</h3>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="welcome_clicnic_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{% static '/img/about/image.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h3>Donate Organ
+                            <span>Be a Hero.</span></h3>
+                        <p>Take a minute to help those in need. 
+                            Every registration counts.</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> Who can be a Donor?? </li>
+                            <li> <i class="flaticon-verified"></i> How to become an organ donor?</li>
+                            <li> <i class="flaticon-verified"></i> What organs and tissues can be transplanted? </li>
+                        </ul>
+                        <a href="about.html" class="boxed-btn6">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="depertment_area">
+        <div class="container">
+            <div class="row custom_align align-items-end justify-content-between">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <h3>Organ Donation</h3>
+                        <p>Organs and tissues that can be transplanted include:</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="learn_more_btn text-right">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="depart_ment_tab mb-30">
+                        <ul class="nav" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                    <i class="flaticon-lung"></i>
+                                    <h4>Lungs</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                    <i class="flaticon-cardiovascular"></i>
+                                    <h4>Heart</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                    <i class="flaticon-cell"></i>
+                                    <h4>Tissue</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology" role="tab" aria-controls="contact" aria-selected="false">
+                                    <i class="flaticon-bone"></i>
+                                    <h4>Bone</h4>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dept_main_info white-bg">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="dept_thumb">
+                                    <img src="{% static '/img/department/2.jpg ' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="dept_info">
+                                    <h3>Life Care<br>Organ Donation and Transplantation</h3>
+                                    <p>The programme was initiated as a large number of patients suffers from an account of irreversible organ ailments involving Heart, Liver, Pancreas and kidney. The programme aims at giving such vulnerable individual an opportunity to have a transplant surgery and lead a healthy life. Moreover, considering the ethical issues surrounding the live and deceased organ transplantation, Government felt the need to streamline the procedures for deceased donor Multi organ transplantation (DDMOT) in the State.</p>
+                                    <a href="#" class="boxed-btn">Know More</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="dept_thumb">
+                                    <img src="{% static '/img/department/2.jpg ' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="dept_info">
+                                    <h3>Life Care<br>Organ Donation and Transplantation</h3>
+                                    <p>The programme was initiated as a large number of patients suffers from an account of irreversible organ ailments involving Heart, Liver, Pancreas and kidney. The programme aims at giving such vulnerable individual an opportunity to have a transplant surgery and lead a healthy life. Moreover, considering the ethical issues surrounding the live and deceased organ transplantation, Government felt the need to streamline the procedures for deceased donor Multi organ transplantation (DDMOT) in the State.</p>
+                                    <a href="#" class="boxed-btn">Know More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="{% static '/img/department/2.jpg ' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Life Care<br>Organ Donation and Transplantation</h3>
+                                <p>The programme was initiated as a large number of patients suffers from an account of irreversible organ ailments involving Heart, Liver, Pancreas and kidney. The programme aims at giving such vulnerable individual an opportunity to have a transplant surgery and lead a healthy life. Moreover, considering the ethical issues surrounding the live and deceased organ transplantation, Government felt the need to streamline the procedures for deceased donor Multi organ transplantation (DDMOT) in the State.</p>
+                                <a href="#" class="boxed-btn">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="dept_thumb">
+                                    <img src="{% static '/img/department/2.jpg ' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="dept_info">
+                                    <h3>Life Care<br>Organ Donation and Transplantation</h3>
+                                    <p>The programme was initiated as a large number of patients suffers from an account of irreversible organ ailments involving Heart, Liver, Pancreas and kidney. The programme aims at giving such vulnerable individual an opportunity to have a transplant surgery and lead a healthy life. Moreover, considering the ethical issues surrounding the live and deceased organ transplantation, Government felt the need to streamline the procedures for deceased donor Multi organ transplantation (DDMOT) in the State.</p>
+                                    <a href="#" class="boxed-btn">Know More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                        
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="expert_doctors_area">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6">
+                    <div class="section_title mb-55 text-center">
+                        <h3>Major Hospitals</h3>
+                        <p>Approved Hospitals for Organ Transplant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{% static '/img/hospitals/1024px-Medical_college_Gate_Thiruvananthapuram.jpg ' %}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>Government Medical College</h3>
+                            <span>Thiruvanathapuram</span>
+                            <div class="social_links">
+                                <ul>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-globe"></i> </a>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{% static '/img/hospitals/amrita-hospitals-kochi-021.jpg' %}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>Amrita Institute of Medical Sciences</h3>
+                            <span>Kochi</span>
+                            <div class="social_links">
+                                <ul>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-globe"></i> </a>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{% static '/img/hospitals/Baby_Memorial_Hospital1.jpg' %}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>Baby Memorial Hospital</h3>
+                            <span>Kozhikode</span>
+                            <div class="social_links">
+                                <ul>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-globe"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="book_apointment_area">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="popup_box ">
+                        <div class="popup_inner">
+                            <h3>Wish to be a Donor??                                 
+                            <span>Register Here</span>
+                            </h3>
+                            <form action="#">
+                                <div class="row">
+                                   
+                                    <div class="col-xl-12">
+                                        <input type="text"  placeholder="Your name ">
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <input type="text"  placeholder="Your age">
+                                    </div>
+                                    <div class="col-xl-9">
+                                        <input type="text"  placeholder="Phone number ">
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="email"  placeholder="Email Address">
+                                    </div>                                    
+                                    <div class="col-xl-12">
+                                        <button type="submit" class="boxed-btn3">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
